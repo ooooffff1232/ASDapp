@@ -32,9 +32,12 @@ genderOptionsVal = ["Male","Female"]
 ethnicityVl =["asian","White European","middle eastern","white","black","others","hispanic","latino","Pacifica","mixed","Native Indian","aboriginal","Turkish"]
 jaundiceVal = ["no","yes"]
 family_mem_with_ASD_val = ["No","yes"]
-A = ["no","Yes"]
 classval = ["no","Yes"]
-A1 = st.selectbox("Does your child look at you when you call his/her name?",A)
+A1 = st.selectbox("Does your child look at you when you call his/her name?",("no","Yes"))
+if A1 ==["no"]:
+  A1 = 0
+else:
+  A1 = 1
 A2 = st.selectbox("Is it easy for you to get eye contact with your child?",(0,1))
 A3 = st.selectbox("Does your child point to indicate that s/he wants something?",(0,1))
 A4 = st.selectbox("Does your child point to share an interest with you?",(0,1))
