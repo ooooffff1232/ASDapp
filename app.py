@@ -39,14 +39,50 @@ if A1 ==["no"]:
 else:
   A1 = 1
 A2 = st.selectbox("Is it easy for you to get eye contact with your child?",(0,1))
+if A2 ==["no"]:
+  A2 = 0
+else:
+  A2 = 1
 A3 = st.selectbox("Does your child point to indicate that s/he wants something?",(0,1))
+if A3 ==["no"]:
+  A3 = 0
+else:
+  A3 = 1
 A4 = st.selectbox("Does your child point to share an interest with you?",(0,1))
+if A4 ==["no"]:
+  A4 = 0
+else:
+  A4 = 1
 A5 = st.selectbox("Does your child pretend? e.g. care for dolls, talk on a toy phone?",(0,1))
+if A5 ==["no"]:
+  A5 = 0
+else:
+  A5 = 1
 A6 = st.selectbox("Does your child follow where you are looking?",(0,1))
+if A6 ==["no"]:
+  A6 = 0
+else:
+  A6 = 1
 A7 = st.selectbox("If you or someone else in the family is visibly upset, does your child show signs of waning to comfort them? e.g. stroking hair, hugging them)",(0,1))
+if A7 ==["no"]:
+  A7 = 0
+else:
+  A7 = 1
 A8 = st.selectbox("Would you describe your child's first word as:",(0,1))
+if A8 ==["no"]:
+  A8 = 0
+else:
+  A8 = 1
 A9 = st.selectbox("Does your child use simple gestures (e.g.wave goodbye)?",(0,1))
+if A9 ==["no"]:
+  A9 = 0
+else:
+  A9 = 1
 A10 = st.selectbox("Does your child stare at nothing with no apparent purpose?",(0,1))
+if A10 ==["no"]:
+  A10 = 0
+else:
+  A10 = 1
 Sex = st.selectbox("Gender",genderOptionsVal)
 Ethnicity = st.selectbox("Ethnicity",ethnicityVl)
 Jaundice = st.selectbox("jaundice",jaundiceVal)
