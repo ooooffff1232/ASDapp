@@ -241,3 +241,5 @@ input_data = {
 if st.button("Get Predictions"):
     prediction = get_prediction(input_data)
     st.subheader(f"Education Type: {prediction}")
+    if st.button("What does that mean?"):
+      
