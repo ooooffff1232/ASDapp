@@ -205,11 +205,14 @@ else:
    A10 = 0
 Sex = st.selectbox("Gender",genderOptionsVal, index= None)
 Ethnicity = st.selectbox("Ethnicity",ethnicityVl, index = None)
-Jaundice = st.selectbox("Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal)
-family_mem_with_ASD_val = st.selectbox("Do you have any family members with ASD?",family_mem_with_ASD_val)
-classval = st.selectbox("Class",classval)
+Jaundice = st.selectbox("Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal, index = None)
+family_mem_with_ASD_val = st.selectbox("Do you have any family members with ASD?",family_mem_with_ASD_val, index = None)
 age_Mons = st.slider("Age In Months",1,150,20)
 Qchat_10_Score = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10
+if Qchat_10_Score < 4:
+  classval == "No"
+else:
+  classval == "Yes"
 if Sex ==genderOptionsVal[0]:
   Sex = "m"
 else:
@@ -238,3 +241,4 @@ input_data = {
 if st.button("Get Predictions"):
     prediction = get_prediction(input_data)
     st.subheader(f"Education Type: {prediction}")
+    st.subheader(classval)
