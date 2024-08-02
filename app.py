@@ -38,10 +38,10 @@ st.markdown('<h1 class="centered-title">ASD Project</h1>', unsafe_allow_html=Tru
 st.subheader("User Dashboard")
 
 genderOptionsVal = ["Male","Female"]
-ethnicityVl =["asian","White European","middle eastern","white","black","others","hispanic","latino","Pacifica","mixed","Native Indian","aboriginal","Turkish"]
-jaundiceVal = ["no","yes"]
+ethnicityVl =["Asian","White European","Middle eastern","White","Black","Others","Hispanic","Latino","Pacifica","Mixed","Native Indian","Aboriginal","Turkish"]
+jaundiceVal = ["No","yes"]
 family_mem_with_ASD_val = ["No","yes"]
-classval = ["no","Yes"]
+classval = ["No","Yes"]
 
 S1 = st.selectbox("1. How often does your child look at you when you call their name?",("Always","Usually","Sometimes","Rarely", "Never"), index= None)
 if S1 =="Always":
