@@ -210,9 +210,9 @@ family_mem_with_ASD_val = st.selectbox("Do you have any family members with ASD?
 age_Mons = st.slider("Age In Months",1,150,20)
 Qchat_10_Score = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10
 if Qchat_10_Score < 4:
-  classval == "No"
+  classvall == "No"
 else:
-  classval == "Yes"
+  classvall == "Yes"
 if Sex ==genderOptionsVal[0]:
   Sex = "m"
 else:
@@ -230,7 +230,7 @@ input_data = {
                "Age_Mons":age_Mons,
                "Family_mem_with_ASD":family_mem_with_ASD_val,
                "Ethnicity":Ethnicity,
-               "Class":classval,
+               "Class":classvall,
                "A3":A3,
                "A6":A6,
                "A9":A9,
@@ -241,4 +241,4 @@ input_data = {
 if st.button("Get Predictions"):
     prediction = get_prediction(input_data)
     st.subheader(f"Education Type: {prediction}")
-    st.subheader(classval)
+    st.subheader(classvall)
