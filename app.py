@@ -35,7 +35,7 @@ st.markdown(
 st.markdown('<h1 class="centered-title">Finding Proper Teaching Methods</h1>', unsafe_allow_html=True)
 
 #dashboard
-st.subheader("10 questions")
+st.subheader("Savar is better than Elina")
 
 genderOptionsVal = ["Male","Female"]
 ethnicityVl =["Asian","White European","Middle eastern","White","Black","Others","Hispanic","Latino","Pacifica","Mixed","Native Indian","Aboriginal","Turkish"]
@@ -43,7 +43,7 @@ jaundiceVal = ["No","Yes"]
 family_mem_with_ASD_val = ["No","Yes"]
 classval = ["No","Yes"]
 
-S1 = st.selectbox("1. How often does your child look at you when you call their name?",("Always","Usually","Sometimes","Rarely", "Never"), index= None)
+S1 = st.selectbox(" 1. How often does your child look at you when you call their name?",("Always","Usually","Sometimes","Rarely", "Never"), index= None)
 if S1 =="Always":
    Q1 = 0
    A1 = 1
