@@ -205,8 +205,6 @@ else:
    A10 = 0
 Sex = st.selectbox("Gender",genderOptionsVal, index= None)
 Ethnicity = st.selectbox("Ethnicity",ethnicityVl, index = None)
-if not Ethnicity:
-    st.warning('Please select the Ethnicity', icon="⚠️")
 Jaundice = st.selectbox("Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal)
 family_mem_with_ASD_val = st.selectbox("Do you have any family members with ASD?",family_mem_with_ASD_val)
 classval = st.selectbox("Class",classval)
