@@ -203,11 +203,10 @@ elif Q10 =="Less than once a week":
 else:
    Q10 = 0
    A10 = 0
-Sex = st.selectbox("Gender",genderOptionsVal)
+Sex = st.selectbox("Gender",genderOptionsVal, index= Non)
 Ethnicity = st.selectbox("Ethnicity",ethnicityVl, index = None)
 if not Ethnicity:
     st.warning('Please select the Ethnicity', icon="⚠️")
-    st.stop()
 Jaundice = st.selectbox("Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal)
 family_mem_with_ASD_val = st.selectbox("Any family member with ASD",family_mem_with_ASD_val)
 classval = st.selectbox("Class",classval)
