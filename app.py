@@ -44,8 +44,6 @@ family_mem_with_ASD_val = ["No","Yes"]
 classval = ["No","Yes"]
 
 S1 = st.selectbox("1. How often does your child look at you when you call their name?",("Always","Usually","Sometimes","Rarely", "Never"), index= None)
-if not S1:
-    st.warning('Please select an answer', icon="⚠️")
 if S1 =="Always":
    Q1 = 0
    A1 = 1
@@ -62,8 +60,6 @@ else :
    Q1 = 1
    A1 = 0
 Q2 = st.selectbox("2. How easy is it for you to get eye contact with your child?",("Very easy", "Quite easy", "Quite difficult", "Very difficult", "Impossible"), index= None)
-if not Q2:
-    st.warning('Please select an answer', icon="⚠️")
 if Q2 =="Very easy":
    Q2 = 0
    A2 = 1
@@ -80,8 +76,6 @@ else:
    Q2 = 1
    A2 = 0
 Q3 = st.selectbox("3. Does your child point to indicate that they want something? (e.g. a toy that is out of reach)",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
-if not Q3:
-    st.warning('Please select an answer', icon="⚠️")
 if Q3 =="Many times a day":
    Q3 = 0
    A3 = 1
@@ -98,8 +92,6 @@ else:
    Q3 = 1
    A3 = 0
 Q4 = st.selectbox("4. Does your child point to share interest with you? (e.g. pointing at an  interesting sight)",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
-if not Q4:
-    st.warning('Please select an answer', icon="⚠️")
 if Q4 =="Many times a day":
    Q4 = 0
    A4 = 1
@@ -116,8 +108,6 @@ else:
    Q4 = 1
    A4 = 0
 Q5 = st.selectbox("5. Does your child pretend? (e.g. care for dolls, talk on a fake phone)",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
-if not Q5:
-    st.warning('Please select an answer', icon="⚠️")
 if Q5 =="Many times a day":
    Q5 = 0
    A5 = 1
@@ -134,8 +124,6 @@ else:
    Q5 = 1
    A5 = 0
 Q6 = st.selectbox("6. Does your child follow where your looking?",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
-if not Q6:
-    st.warning('Please select an answer', icon="⚠️")
 if Q6 =="Many times a day":
    Q6 = 0
    A6 = 1
@@ -152,8 +140,6 @@ else:
    Q6 = 1
    A6 = 0
 Q7 = st.selectbox("7. If you or someone else in the family is visibly upset, does your child show signs  of wanting to comfort them?  (e.g. stroking hair, hugging them) ",("Always","Usually","Sometimes","Rarely", "Never"), index= None)
-if not Q7:
-    st.warning('Please select an answer', icon="⚠️")
 if Q7 =="Always":
    Q7 = 0
    A7 = 1
@@ -170,8 +156,6 @@ else:
    Q7 = 1
    A7 = 0
 Q8 = st.selectbox("8. How would you describe your child's first words?",("Very easy", "Quite easy", "Quite difficult", "Very difficult", "Impossible"), index= None)
-if not Q8:
-    st.warning('Please select an answer', icon="⚠️")
 if Q8 =="Very easy":
    Q8 = 0
    A8 = 1
@@ -188,8 +172,6 @@ else:
    Q8 = 1
    A8 = 0
 Q9 = st.selectbox("9. Does your child use simple gestures? (e.g.  wave  goodbye) ",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
-if not Q9:
-    st.warning('Please select an answer', icon="⚠️")
 if Q9 =="Many times a day":
    Q9 = 0
    A9 = 1
@@ -206,8 +188,6 @@ else:
    Q9 = 1
    A9 = 0
 Q10 = st.selectbox("10. Does your child stare at nothing with no apparent purpose?",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
-if not Q10:
-    st.warning('Please select an answer', icon="⚠️")
 if Q10 =="Many times a day":
    Q10 = 1
    A10 = 1
