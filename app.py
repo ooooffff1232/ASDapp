@@ -44,6 +44,8 @@ family_mem_with_ASD_val = ["No","Yes"]
 classval = ["No","Yes"]
 
 S1 = st.selectbox("1. How often does your child look at you when you call their name?",("Always","Usually","Sometimes","Rarely", "Never"), index= None)
+if not S1:
+    st.warning('Please select an answer', icon="⚠️")
 if S1 =="Always":
    Q1 = 0
    A1 = 1
