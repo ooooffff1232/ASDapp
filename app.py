@@ -203,11 +203,11 @@ elif Q10 =="Less than once a week":
 else:
    Q10 = 0
    A10 = 0
-Sex = st.selectbox("Q10. Gender",genderOptionsVal, index= None)
-Ethnicity = st.selectbox("Q11. Ethnicity",ethnicityVl, index = None)
-Jaundice = st.selectbox("Q12. Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal, index = None)
-family_mem_with_ASD_val = st.selectbox("Q13. Do you have any family members with ASD?",family_mem_with_ASD_val, index = None)
-age_Mons = st.slider("Q14. Age In Months",1,150,20)
+Sex = st.selectbox("Q11. Gender",genderOptionsVal, index= None)
+Ethnicity = st.selectbox("Q12. Ethnicity",ethnicityVl, index = None)
+Jaundice = st.selectbox("Q13. Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal, index = None)
+family_mem_with_ASD_val = st.selectbox("Q14. Do you have any family members with ASD?",family_mem_with_ASD_val, index = None)
+age_Mons = st.slider("Q15. Age In Months",1,150,20)
 Qchat_10_Score = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10
 if Qchat_10_Score < 4:
   classvall = "No"
