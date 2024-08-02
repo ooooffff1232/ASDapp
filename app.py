@@ -17,13 +17,22 @@ def get_prediction(data={"A3":0,"A1":1,"A6":1,"A4":1,"A9":0,"A7":1,"A10":1,"Sex"
   response = response["predicted_label"]
 
   return response
-
+st.markdown(
+    """
+    <style>
+    .centered-title {
+        text-align: center;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 
 #creating the web app
 
 #title
-st.title("ASD Project")
+st.markdown('<h1 class="centered-title">ASD Project</h1>', unsafe_allow_html=True)
 
 #dashboard
 st.subheader("User Dashboard")
@@ -33,63 +42,177 @@ ethnicityVl =["asian","White European","middle eastern","white","black","others"
 jaundiceVal = ["no","yes"]
 family_mem_with_ASD_val = ["No","yes"]
 classval = ["no","Yes"]
-A1 = st.selectbox("Does your child look at you when you call his/her name?",("no","Yes"))
-if A1 ==["no"]:
-  A1 = 0
+
+S1 = st.selectbox("1. How often does your child look at you when you call their name?",("Always","Usually","Sometimes","Rarely", "Never"), index= None)
+if S1 =="Always":
+   Q1 = 0
+   A1 = 1
+elif S1 =="Usually":
+   Q1 = 0
+   A1 = 1
+elif S1 =="Sometimes":
+   Q1 = 1
+   A1 = 1
+elif S1 =="Rarely":
+   Q1 = 1
+   A1 = 0
+else :
+   Q1 = 1
+   A1 = 0
+Q2 = st.selectbox("2. How easy is it for you to get eye contact with your child?",("Very easy", "Quite easy", "Quite difficult" "Very difficult", "Impossible"), index= None)
+if Q2 =="Very easy":
+   Q2 = 0
+   A2 = 1
+elif Q2 =="Quite easy":
+   Q2 = 0
+   A2 = 1
+elif Q2 =="Quite difficult":
+   Q2 = 1
+   A2 = 0
+elif Q2 =="Very difficult":
+   Q2 = 1
+   A2 = 0
 else:
-  A1 = 1
-A2 = st.selectbox("Is it easy for you to get eye contact with your child?",("no","Yes"))
-if A2 ==["no"]:
-  A2 = 0
+   Q2 = 1
+   A2 = 0
+Q3 = st.selectbox("3. Does your child point to indicate that they want something? (e.g. a toy that is out of reach)",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
+if Q3 =="Many times a day":
+   Q3 = 0
+   A3 = 1
+elif Q3 =="A few times a day":
+   Q3 = 0
+   A3 = 1
+elif Q3 =="A few times a week":
+   Q3 = 1
+   A3 = 1
+elif Q3 =="Less than once a week":
+   Q3 = 1
+   A3 = 0
 else:
-  A2 = 1
-A3 = st.selectbox("Does your child point to indicate that s/he wants something?",("no","Yes"))
-if A3 ==["no"]:
-  A3 = 0
+   Q3 = 1
+   A3 = 0
+Q4 = st.selectbox("4. Does your child point to share interest with you? (e.g. pointing at an  interesting sight)",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
+if Q4 =="Many times a day":
+   Q4 = 0
+   A4 = 1
+elif Q4 =="A few times a day":
+   Q4 = 0
+   A4 = 1
+elif Q4 =="A few times a week":
+   Q4 = 1
+   A4 = 1
+elif Q4 =="Less than once a week":
+   Q4 = 1
+   A4 = 0
 else:
-  A3 = 1
-A4 = st.selectbox("Does your child point to share an interest with you?",("no","Yes"))
-if A4 ==["no"]:
-  A4 = 0
+   Q4 = 1
+   A4 = 0
+Q5 = st.selectbox("5. Does your child pretend? (e.g. care for dolls, talk on a fake phone)",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
+if Q5 =="Many times a day":
+   Q5 = 0
+   A5 = 1
+elif Q5 =="A few times a day":
+   Q5 = 0
+   A5 = 1
+elif Q5 =="A few times a week":
+   Q5 = 1
+   A5 = 1
+elif Q5 =="Less than once a week":
+   Q5 = 1
+   A5 = 0
 else:
-  A4 = 1
-A5 = st.selectbox("Does your child pretend? e.g. care for dolls, talk on a toy phone?",("no","Yes"))
-if A5 ==["no"]:
-  A5 = 0
+   Q5 = 1
+   A5 = 0
+Q6 = st.selectbox("6. Does your child follow where your looking?",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
+if Q6 =="Many times a day":
+   Q6 = 0
+   A6 = 1
+elif Q6 =="A few times a day":
+   Q6 = 0
+   A6 = 1
+elif Q6 =="A few times a week":
+   Q6 = 1
+   A6 = 1
+elif Q6 =="Less than once a week":
+   Q6 = 1
+   A6 = 0
 else:
-  A5 = 1
-A6 = st.selectbox("Does your child follow where you are looking?",("no","Yes"))
-if A6 ==["no"]:
-  A6 = 0
+   Q6 = 1
+   A6 = 0
+Q7 = st.selectbox("7. If you or someone else in the family is visibly upset, does your child show signs  of wanting to comfort them?  (e.g. stroking hair, hugging them) ",("Always","Usually","Sometimes","Rarely", "Never"), index= None)
+if Q7 =="Always":
+   Q7 = 0
+   A7 = 1
+elif Q7 =="Usually":
+   Q7 = 0
+   A7 = 1
+elif Q7 =="Sometimes":
+   Q7 = 1
+   A7 = 1
+elif Q7 =="Rarely":
+   Q7 = 1
+   A7 = 0
 else:
-  A6 = 1
-A7 = st.selectbox("If you or someone else in the family is visibly upset, does your child show signs of waning to comfort them? e.g. stroking hair, hugging them)",("no","Yes"))
-if A7 ==["no"]:
-  A7 = 0
+   Q7 = 1
+   A7 = 0
+Q8 = st.selectbox("8. How would you describe your child's first words?",("Very easy", "Quite easy", "Quite difficult" "Very difficult", "Impossible"), index= None)
+if Q8 =="Very easy":
+   Q8 = 0
+   A8 = 1
+elif Q8 =="Quite easy":
+   Q8 = 0
+   A8 = 1
+elif Q8 =="Quite difficult":
+   Q8 = 1
+   A8 = 0
+elif Q8 =="Very difficult":
+   Q8 = 1
+   A8 = 0
 else:
-  A7 = 1
-A8 = st.selectbox("Would you describe your child's first word as:",("no","Yes"))
-if A8 ==["no"]:
-  A8 = 0
+   Q8 = 1
+   A8 = 0
+Q9 = st.selectbox("9. Does your child use simple gestures? (e.g.  wave  goodbye) ",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
+if Q9 =="Many times a day":
+   Q9 = 0
+   A9 = 1
+elif Q9 =="A few times a day":
+   Q9 = 0
+   A9 = 1
+elif Q9 =="A few times a week":
+   Q9 = 1
+   A9 = 1
+elif Q9 =="Less than once a week":
+   Q9 = 1
+   A9 = 0
 else:
-  A8 = 1
-A9 = st.selectbox("Does your child use simple gestures (e.g.wave goodbye)?",("no","Yes"))
-if A9 ==["no"]:
-  A9 = 0
+   Q9 = 1
+   A9 = 0
+Q10 = st.selectbox("10. Does your child stare at nothing with no apparent purpose?",("Many times a day", "A few times a day",  "A few times a week", "Less than once a week", "Never"), index= None)
+if Q10 =="Many times a day":
+   Q10 = 1
+   A10 = 1
+elif Q10 =="A few times a day":
+   Q10 = 1
+   A10 = 1
+elif Q10 =="A few times a week":
+   Q10 = 1
+   A10 = 1
+elif Q10 =="Less than once a week":
+   Q10 = 0
+   A10 = 0
 else:
-  A9 = 1
-A10 = st.selectbox("Does your child stare at nothing with no apparent purpose?",("no","Yes"))
-if A10 ==["no"]:
-  A10 = 0
-else:
-  A10 = 1
+   Q10 = 0
+   A10 = 0
 Sex = st.selectbox("Gender",genderOptionsVal)
-Ethnicity = st.selectbox("Ethnicity",ethnicityVl)
-Jaundice = st.selectbox("jaundice",jaundiceVal)
+Ethnicity = st.selectbox("Ethnicity",ethnicityVl, index = None)
+if not Ethnicity:
+    st.warning('Please select the Ethnicity', icon="⚠️")
+    st.stop()
+Jaundice = st.selectbox("Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal)
 family_mem_with_ASD_val = st.selectbox("Any family member with ASD",family_mem_with_ASD_val)
 classval = st.selectbox("Class",classval)
-age_Mons = st.slider("age_Mons",1,150,20)
-Qchat_10_Score = st.slider("Qchat-10-Score",1,10,5)
+age_Mons = st.slider("Age In Months",1,150,20)
+Qchat_10_Score = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10
 if Sex ==genderOptionsVal[0]:
   Sex = "m"
 else:
@@ -115,5 +238,6 @@ input_data = {
                "Jaundice":Jaundice
 }
 
-prediction = get_prediction(input_data)
-st.subheader(f"Education Type: {prediction}")
+if st.button("Get Predictions"):
+    prediction = get_prediction(input_data)
+    st.subheader(f"Education Type: {prediction}")
