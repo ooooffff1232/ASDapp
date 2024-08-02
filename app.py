@@ -35,7 +35,7 @@ st.markdown(
 st.markdown('<h1 class="centered-title">Finding Proper Teaching Methods</h1>', unsafe_allow_html=True)
 
 #dashboard
-st.subheader("Savar is better than Elina")
+
 
 genderOptionsVal = ["Male","Female"]
 ethnicityVl =["Asian","White European","Middle eastern","White","Black","Others","Hispanic","Latino","Pacifica","Mixed","Native Indian","Aboriginal","Turkish"]
@@ -203,11 +203,11 @@ elif Q10 =="Less than once a week":
 else:
    Q10 = 0
    A10 = 0
-Sex = st.selectbox("Gender",genderOptionsVal, index= None)
-Ethnicity = st.selectbox("Ethnicity",ethnicityVl, index = None)
-Jaundice = st.selectbox("Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal, index = None)
-family_mem_with_ASD_val = st.selectbox("Do you have any family members with ASD?",family_mem_with_ASD_val, index = None)
-age_Mons = st.slider("Age In Months",1,150,20)
+Sex = st.selectbox("Q10. Gender",genderOptionsVal, index= None)
+Ethnicity = st.selectbox("Q11. Ethnicity",ethnicityVl, index = None)
+Jaundice = st.selectbox("Q12. Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal, index = None)
+family_mem_with_ASD_val = st.selectbox("Q13. Do you have any family members with ASD?",family_mem_with_ASD_val, index = None)
+age_Mons = st.slider("Q14. Age In Months",1,150,20)
 Qchat_10_Score = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10
 if Qchat_10_Score < 4:
   classvall = "No"
