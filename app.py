@@ -39,8 +39,8 @@ st.subheader("10 questions")
 
 genderOptionsVal = ["Male","Female"]
 ethnicityVl =["Asian","White European","Middle eastern","White","Black","Others","Hispanic","Latino","Pacifica","Mixed","Native Indian","Aboriginal","Turkish"]
-jaundiceVal = ["No","yes"]
-family_mem_with_ASD_val = ["No","yes"]
+jaundiceVal = ["No","Yes"]
+family_mem_with_ASD_val = ["No","Yes"]
 classval = ["No","Yes"]
 
 S1 = st.selectbox("1. How often does your child look at you when you call their name?",("Always","Usually","Sometimes","Rarely", "Never"), index= None)
@@ -59,7 +59,7 @@ elif S1 =="Rarely":
 else :
    Q1 = 1
    A1 = 0
-Q2 = st.selectbox("2. How easy is it for you to get eye contact with your child?",("Very easy", "Quite easy", "Quite difficult" "Very difficult", "Impossible"), index= None)
+Q2 = st.selectbox("2. How easy is it for you to get eye contact with your child?",("Very easy", "Quite easy", "Quite difficult", "Very difficult", "Impossible"), index= None)
 if Q2 =="Very easy":
    Q2 = 0
    A2 = 1
@@ -155,7 +155,7 @@ elif Q7 =="Rarely":
 else:
    Q7 = 1
    A7 = 0
-Q8 = st.selectbox("8. How would you describe your child's first words?",("Very easy", "Quite easy", "Quite difficult" "Very difficult", "Impossible"), index= None)
+Q8 = st.selectbox("8. How would you describe your child's first words?",("Very easy", "Quite easy", "Quite difficult", "Very difficult", "Impossible"), index= None)
 if Q8 =="Very easy":
    Q8 = 0
    A8 = 1
@@ -208,7 +208,7 @@ Ethnicity = st.selectbox("Ethnicity",ethnicityVl, index = None)
 if not Ethnicity:
     st.warning('Please select the Ethnicity', icon="⚠️")
 Jaundice = st.selectbox("Does your child have jaundice (yellowish discoloration of the skin)?",jaundiceVal)
-family_mem_with_ASD_val = st.selectbox("Any family member with ASD",family_mem_with_ASD_val)
+family_mem_with_ASD_val = st.selectbox("Do you have any family members with ASD?",family_mem_with_ASD_val)
 classval = st.selectbox("Class",classval)
 age_Mons = st.slider("Age In Months",1,150,20)
 Qchat_10_Score = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10
