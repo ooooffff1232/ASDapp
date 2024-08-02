@@ -32,10 +32,10 @@ st.markdown(
 #creating the web app
 
 #title
-st.markdown('<h1 class="centered-title">ASD Project</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="centered-title">Finding Proper Teaching Methods</h1>', unsafe_allow_html=True)
 
 #dashboard
-st.subheader("User Dashboard")
+st.subheader("10 questions")
 
 genderOptionsVal = ["Male","Female"]
 ethnicityVl =["Asian","White European","Middle eastern","White","Black","Others","Hispanic","Latino","Pacifica","Mixed","Native Indian","Aboriginal","Turkish"]
