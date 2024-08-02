@@ -203,7 +203,7 @@ elif Q10 =="Less than once a week":
 else:
    Q10 = 0
    A10 = 0
-Sex = st.selectbox("Gender",genderOptionsVal, index= Non)
+Sex = st.selectbox("Gender",genderOptionsVal, index= None)
 Ethnicity = st.selectbox("Ethnicity",ethnicityVl, index = None)
 if not Ethnicity:
     st.warning('Please select the Ethnicity', icon="⚠️")
