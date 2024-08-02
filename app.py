@@ -210,9 +210,9 @@ family_mem_with_ASD_val = st.selectbox("Do you have any family members with ASD?
 age_Mons = st.slider("Age In Months",1,150,20)
 Qchat_10_Score = Q1+Q2+Q3+Q4+Q5+Q6+Q7+Q8+Q9+Q10
 if Qchat_10_Score < 4:
-  classvall == "No"
+  classvall = "No"
 else:
-  classvall == "Yes"
+  classvall = "Yes"
 if Sex ==genderOptionsVal[0]:
   Sex = "m"
 else:
