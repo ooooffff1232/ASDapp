@@ -240,7 +240,7 @@ input_data = {
 
 if st.button("Get Predictions"):
     prediction = get_prediction(input_data)
-    st.subheader(f"Education Type: {prediction}", divider=True)
+    st.subheader(f"Education Type: {prediction}", divider="blue")
     if prediction =="Antecedent based Intervention":
       st.text("Antecedent-based intervention focuses on modifying the environment or conditions before a behavior occurs to prevent challenging behaviors. For children with autism, this might involve changing the physical setting, providing clear instructions, or offering choices to reduce triggers and promote positive behavior.")
     if prediction =="Task Analysis":
