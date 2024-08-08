@@ -241,18 +241,18 @@ input_data = {
 if st.button("Get Predictions"):
     prediction = get_prediction(input_data)
     st.subheader(f"Education Type: {prediction}")
-    if prediction =="Antecedent based Intervention"
+    if prediction =="Antecedent based Intervention":
       st.subheader(f"Education Type: {prediction}")
       st.text("Antecedent-based intervention focuses on modifying the environment or conditions before a behavior occurs to prevent challenging behaviors. For children with autism, this might involve changing the physical setting, providing clear instructions, or offering choices to reduce triggers and promote positive behavior.")
-    if prediction =="Task Analysis"
+    if prediction =="Task Analysis":
       st.text("Task analysis involves breaking down complex tasks into smaller, manageable steps. For children with autism, this method helps in teaching daily living skills, academic tasks, and social behaviors by providing clear, sequential instructions and reinforcing each step as it is mastered.")
-    if prediction =="Pivotal Response Training"
+    if prediction =="Pivotal Response Training":
       st.text("Pivotal Response Training (PRT) targets key areas of a child's development, such as motivation and self-management, to produce broad improvements in communication, behavior, and social skills. This method uses natural learning opportunities and child-initiated interactions to reinforce desired behaviors.")
-    if prediction =="Picture Exchange Communication"
+    if prediction =="Picture Exchange Communication":
       st.text("PECS is a communication system that uses pictures to help children with autism develop functional communication skills. Children are taught to exchange pictures for desired items or activities, gradually progressing to constructing simple sentences and engaging in more complex communication.")
-    if prediction =="Technology aided Instruction"
+    if prediction =="Technology aided Instruction":
       st.text("Technology-aided instruction uses devices such as tablets, computers, and specialized software to facilitate learning. For children with autism, this can include interactive apps, video modeling, and virtual reality environments that provide engaging and personalized learning experiences.")
-    if prediction =="Peer-mediated Instruction"
+    if prediction =="Peer-mediated Instruction":
       st.text("Peer-mediated instruction involves teaching typically developing peers strategies to interact and support their classmates with autism. This method enhances socialization and communication skills for children with autism through structured play, group activities, and peer modeling.")
   
       
