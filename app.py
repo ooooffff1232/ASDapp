@@ -248,7 +248,7 @@ if st.button("Get Predictions"):
     if prediction =="Pivotal Response Training":
       st.text("Pivotal Response Training (PRT) targets key areas of a child's development, such as motivation and self-management, to produce broad improvements in communication, behavior, and social skills. This method uses natural learning opportunities and child-initiated interactions to reinforce desired behaviors.")
     if prediction =="Picture Exchange Communication":
-      st.text("PECS is a communication system that uses pictures to help children with autism develop functional communication skills. Children are taught to exchange pictures for desired items or activities, gradually progressing to constructing simple sentences and engaging in more complex communication.")
+      st.caption("PECS is a communication system that uses pictures to help children with autism develop functional communication skills. Children are taught to exchange pictures for desired items or activities, gradually progressing to constructing simple sentences and engaging in more complex communication.")
     if prediction =="Technology aided Instruction":
       st.text("Technology-aided instruction uses devices such as tablets, computers, and specialized software to facilitate learning. For children with autism, this can include interactive apps, video modeling, and virtual reality environments that provide engaging and personalized learning experiences.")
     if prediction =="Peer-mediated Instruction":
