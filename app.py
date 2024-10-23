@@ -32,7 +32,7 @@ st.markdown(
 #creating the web app
 
 #title
-st.markdown('<h1 class="centered-title">Finding Proper Teaching Methods</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="centered-title">Divergence AI</h1>', unsafe_allow_html=True)
 
 #dashboard
 
