@@ -253,5 +253,7 @@ if st.button("Get Predictions"):
       st.caption("Technology-aided instruction uses devices such as tablets, computers, and specialized software to facilitate learning. For children with autism, this can include interactive apps, video modeling, and virtual reality environments that provide engaging and personalized learning experiences.")
     if prediction =="Peer-mediated Instruction":
       st.caption("Peer-mediated instruction involves teaching typically developing peers strategies to interact and support their classmates with autism. This method enhances socialization and communication skills for children with autism through structured play, group activities, and peer modeling.")
+    if preduction =="dfdf":
+      st.caption("dfsdf")
   
       
